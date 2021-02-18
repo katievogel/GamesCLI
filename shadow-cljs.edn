@@ -1,0 +1,8 @@
+;; shadow-cljs configuration
+{:source-paths ["src"]
+ :dependencies []
+ :builds
+               {:app {:target    :node-script
+                      :output-to "games-cli.js"
+                      :main      main.core/init!}}}
+
