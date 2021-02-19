@@ -1,10 +1,10 @@
 (ns main.core
-  (:require #_[main.calculator]
+  (:require [main.calculator]
             [main.even-or-odd]
             [main.fizzbuzz]
             #_[main.go-engine]
             [main.r-p-s]
-            #_[main.tic-tac-toe]))
+            [main.tic-tac-toe]))
 
 (defn init! [game-id x y]
   #_(println "args:" x)
@@ -15,6 +15,13 @@
     (println (main.fizzbuzz/fizzbuzz x))
     "rps"
     (println (main.r-p-s/rps x y))
-    #_(main.calculator)
+    "calc add"
+    (println (main.calculator/add x y))
+    "calc subtract"
+    (println (main.calculator/subtract x y))
+    "calc multiply"
+    (println (main.calculator/multiply x y))
+    "calc divide"
+    (println (main.calculator/divide* x y))
     #_(main.go-engine)
-    #_(main.tic-tac-toe)))
+    (println (main.tic-tac-toe))))
