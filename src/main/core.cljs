@@ -2,7 +2,7 @@
   (:require [main.calculator]
             [main.even-or-odd]
             [main.fizzbuzz]
-            #_[main.go-engine]
+            [main.go-engine]
             [main.r-p-s]
             [main.tic-tac-toe]))
 
@@ -23,5 +23,9 @@
     (println (main.calculator/multiply x y))
     "calc divide"
     (println (main.calculator/divide* x y))
-    #_(main.go-engine)
-    (println (main.tic-tac-toe))))
+    "go"
+    (println (main.go-engine/go))
+    "ttt"
+    (println (main.tic-tac-toe))
+    nil
+    (println "No command given.")))
